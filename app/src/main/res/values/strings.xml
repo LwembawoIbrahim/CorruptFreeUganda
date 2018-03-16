@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Corrupt Free Uganda</string>
+    <string name="corruption_menu">Menu</string>
+    <string name="title_activity_court_cases">CourtCasesActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="report_corruption">Report Corruption</string>
+    <string name="court_case">Court Cases</string>
+    <string name="title_activity_on_going_cases">OnGoingCasesActivity</string>
+    <string name="title_activity_concluded_cases">ConcludedCasesActivity</string>
+    <string name="title_activity_appealed_cases">AppealedCasesActivity</string>
+    <string name="report_case">Report Case</string>
+    <!--<string name="court_cases">Court Cases</string>-->
+    <string name="government_services">Government Services</string>
+    <string name="information">Information</string>
+    <string name="corrupt_free_uganda">Corrupt Free Uganda</string>
+    <string name="ongoing_cases">OnGoing Cases</string>
+    <string name="concluded_cases">Concluded Cases</string>
+    <string name="appealed_cases">Appealed Cases</string>
+    <string name="input_date">Input Date </string>
+    <string name="report_details"><u><b>Report Details</b></u></string>
+    <string name="personal_information"><u><b>Personal Information</b></u></string>
+    <string name="input_time">Input Time</string>
+    <string name="record_voice">Record Voice</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="upload_video">Upload Video</string>
+    <string name="upload_audio">Upload Audio</string>
+    <string name="dialog_upload_image">Upload_image</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="take_a_photo">Take a Photo</string>
+    <string name="choose_from_gallary">Choose from Gallary</string>
+    <string name="cancel">Cancel</string>
+    <string name="ongoing_civil_cases">OnGoing Civil Cases</string>
+
+</resources>
