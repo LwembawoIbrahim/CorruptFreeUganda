@@ -1,5 +1,6 @@
 package com.ibralwembawogmail.corruptfreeuganda.FragmentClasses;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,6 +20,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import com.ibralwembawogmail.corruptfreeuganda.IggOfficesActivity;
 import com.ibralwembawogmail.corruptfreeuganda.R;
 
 public class CourtCasesActivity extends AppCompatActivity {
@@ -88,6 +90,10 @@ public class CourtCasesActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        else if(id==R.id.igg_offices){
+            Intent iggOffices = new Intent(this, IggOfficesActivity.class);
+            startActivity(iggOffices);
         }
 
         return super.onOptionsItemSelected(item);

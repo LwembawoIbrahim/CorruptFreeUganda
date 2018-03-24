@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ibralwembawogmail.corruptfreeuganda.IggOfficesActivity"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+    <TextView
+                android:padding="5dp"
+                android:id="@+id/AruaOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Arua Regional Office"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Plot No. 10 Weather Head Park Lane,"
+            android:textColor="@android:color/black"
+
+            android:layout_marginLeft="2sp">
+
+
+        </TextView>
+           <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="P.O. Box 789, Arua."
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="2sp">
+
+
+        </TextView>
+            <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Tel: 0476 4203 17"
+            android:textColor="@android:color/black"
+
+            android:layout_marginLeft="2sp">
+
+
+        </TextView>
+            <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="arua@igg.go.ug"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="2sp"
+                >
+        </TextView>
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/fortPortal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Fort Portal Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot 1A Mugurusi Road,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 157,Fort Portal."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0483 423010/1"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="fortportal@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/GuluRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Gulu Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot A1 Ogwok Ayaru Road Pece Division, Gulu Municipality"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 771 Gulu."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0471 432569/432568"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="gulu@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/HoimaRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Hoima Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot No. 17 Orphanage Road,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 113,Hoima."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0465-440260"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="hoima@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/JinjaRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Jinja Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot 35 Rippon Gardens Road,,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 303,Jinja."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0434-120160/ 0434-122688"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="jinja@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/KabaleRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Kabale Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Babukika Road,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 981,Kabale."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0486-422461/423085"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="kabale@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/LiraRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Lira Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot 4 Osman Road"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 1 Lira."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0473-420099"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="lira@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/MasakaRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Masaka Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot No. 29/31 Victoria Road,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 925, Masaka."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0481-420222"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="masaka@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/MbaleRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Mbale Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot No. 20 Masaba Road,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 24,Mbale."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0454-435029/ 35255"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="mbale@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/MbararaRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Mbarara Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot No. 17, Muti Drive,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 1903,Mbarara."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0485-421068"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="mbarara@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/MorotoRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Moroto Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot No 3 Odeke road,Near UNRA offices,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 104,Moroto."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0393-278373"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="moroto@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/SorotiRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Soroti Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot 73 Gweri Road,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 346,Soroti."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0454-461784/461584"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="soroti@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/TororoRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Soroti Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot 45 Kashmir Road Tororo Municipality"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 5,Tororo."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0454-445534/3"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="tororo@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/NukonoRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Mukono Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot 2377/2378, Lower Kauga, Mukono,"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. BOX 901 Mukono."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0414-692042/3"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="mukono@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/MuyoRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Moyo Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Moyo S.S Road"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="P.O. Box 192 Moyo."
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0393-280102"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="moyo@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/KampalaRegion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Kampala Regional Office."
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Plot 1645 Gyagenda Road, Ntinda-Kiwatule"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="C/O P.O. Box 1682, Kampala"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Tel: 0414 580 499"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="kampala@igg.go.ug"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -20,13 +20,18 @@ public class ConcludedCriminalCasesAdapter extends RecyclerView.Adapter<Conclude
     }
 
     public  static final class ViewHolder extends RecyclerView.ViewHolder{
-        public TextView tvConcludedCourtCaseTitle,tvConcludedCourtCaseNo,tvConcludedCourtCaseDescription;
+        public TextView tvConcludedCourtCaseTitle,tvConcludedCourtCaseNo,
+                tvConcludedCourtCaseDescription,tvCardId;
         public ViewHolder(CardView cardView) {
             super(cardView);
 
-            tvConcludedCourtCaseTitle = (TextView)cardView.findViewById(R.id.txtCaseCourtNo);
+           // tvConcludedCourtCaseTitle = (TextView)cardView.findViewById(R.id.txtCaseCourtNo);
             tvConcludedCourtCaseNo = (TextView)cardView.findViewById(R.id.txtConcludedCaseCourtNo);
             tvConcludedCourtCaseDescription= (TextView)cardView.findViewById(R.id.txtConcludedCaseDescription);
+            tvCardId = ((TextView)cardView.findViewById(R.id.txtCardId));
+
+
+
         }
 
 
