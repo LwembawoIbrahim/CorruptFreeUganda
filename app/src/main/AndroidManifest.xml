@@ -23,9 +23,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/corrupt_free_uganda" />
-        <activity
             android:name=".GovernmentServicesActivity"
             android:label="@string/government_services"
             android:parentActivityName=".MainActivity" />
@@ -45,9 +42,20 @@
         <activity
             android:name=".DetailedActivity"
             android:label="@string/details" />
-        <activity android:name=".IggOfficesActivity"
-            android:label="Igg Offices"
-            android:parentActivityName=".FragmentClasses.CourtCasesActivity"></activity>
+        <activity
+            android:name=".IggOfficesActivity"
+            android:label="@string/igg_office_location"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddOfficesActivity"
+            android:label="@string/add_igg_offices" />
+        <activity
+            android:name=".AdminLogInActivity"
+            android:label="@string/log_in" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/corrupt_free_uganda"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

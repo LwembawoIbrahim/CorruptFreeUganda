@@ -46,5 +46,19 @@
     <string name="igg_offices">Igg Offices in Uganda</string>
 
     <string name="Arua"><u></u></string>
+    <string name="title_activity_igg_offices">IggOfficesActivity</string>
+    <string name="add_igg_offices">Add Offices</string>
+    <string name="log_in">Log In</string>
+    <string name="admin_log_in">Log In</string>
+    <string name="submit_offices">Submit</string>
+    <string name="regional_office_name">Regional Office Name</string>
+    <string name="office_address">Address</string>
+    <string name="office_email_address">Email Address</string>
+    <string name="_office_telephone_number">Telephone Number</string>
+    <string name="office_box_number">Box Number</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="igg_office_location">IGG Offices</string>
 
 </resources>

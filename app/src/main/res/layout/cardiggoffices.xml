@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/iggOfficesCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="2dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:padding="5dp"
+                android:id="@+id/igg_offices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginLeft="2sp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/OfficeAddress"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:id="@+id/BoxNumber"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textStyle="normal"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/OfficeTelephoneNumber"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text=" TextView"
+                android:textColor="@android:color/black"
+                android:onClick="Call"
+                android:layout_marginLeft="2sp">
+
+
+            </TextView>
+            <TextView
+                android:id="@+id/OfficeEmail"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="TextView"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginLeft="2sp"
+                >
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
