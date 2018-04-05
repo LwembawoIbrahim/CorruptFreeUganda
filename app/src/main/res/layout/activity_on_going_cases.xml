@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.OnGoingCasesActivity">
+    tools:context="com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.criminal_cases.OnGoingCasesFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/OnGoingCriminalCasesRecyclerView"
@@ -13,7 +13,7 @@
         android:layout_height="0dp"
         android:layout_weight="2"/>
 
-    <Button
+  <!--  <Button
         android:id="@+id/OnGoingCivilCases"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,5 +21,5 @@
         android:text="@string/ongoing_civil_cases"
         android:textAllCaps="false"
         android:layout_below="@+id/OnGoingCriminalCasesRecyclerView"
-        />
+        />-->
 </LinearLayout>

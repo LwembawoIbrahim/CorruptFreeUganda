@@ -25,7 +25,7 @@ public class AppealedCourtCasesAdapter extends RecyclerView.Adapter<AppealedCour
             super(cardView);
 
             tvAppealedCaseTitle =(TextView)cardView.findViewById(R.id.txtAppealedCaseTitle);
-            tvAppealedCasesCourtNo =(TextView)cardView.findViewById(R.id.txtAppealedCaseCourtNo);
+            //tvAppealedCasesCourtNo =(TextView)cardView.findViewById(R.id.txtAppealedCaseCourtNo);
             tvAppealedCourCaseDescription = (TextView)cardView.findViewById(R.id.txtAppealedCaseDescription);
 
         }

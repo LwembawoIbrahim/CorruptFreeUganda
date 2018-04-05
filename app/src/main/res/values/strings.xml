@@ -60,5 +60,11 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="igg_office_location">IGG Offices</string>
+    <string name="title_activity_igg_admin">IggAdminActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Lwembawo fragment</string>
+    <string name="title_activity_civil_case_fragment">CivilCaseFragment</string>
+    <string name="cases">Cases</string>
 
 </resources>

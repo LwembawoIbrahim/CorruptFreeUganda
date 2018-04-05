@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,11 +16,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
-import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.CourtCasesActivity;
+import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.civil_cases.CivilCaseFragment;
+import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.civil_cases.OnGoingCivilCaseFragment;
+import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.criminal_cases.CourtCasesFragment;
+import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.IggOfficesActivity;
+
+
+import com.ibralwembawogmail.corruptfreeuganda.AdminLogInActivity;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    public static final String LOG_TAG =" Civil";
+    Button civilCase;
+    Button criminalCases;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +42,35 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
-                Intent reportCases = new Intent(MainActivity.this,TextReportingActivity.class);
-                startActivity(reportCases);
+                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(MainActivity.this);
+                View alertView = getLayoutInflater().inflate(R.layout.dialog_select_case_type,null);
+                criminalCases =(Button)alertView.findViewById(R.id.crimeCases);
+
+                criminalCases.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent  gotoCriminal= new Intent(MainActivity.this,TextReportingActivity.class);
+                        startActivity(gotoCriminal);
+
+
+                    }
+                });
+                civilCase = (Button)alertView.findViewById(R.id.civilCases);
+                civilCase.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent gotoCivilReport = new Intent(MainActivity.this,TextReportingActivity.class);
+                        startActivity(gotoCivilReport);
+
+                    }
+                });
+                alertBuilder.setView(alertView);
+                AlertDialog dialog = alertBuilder.create();
+                dialog.show();
+
+                /*Intent reportCases = new Intent(MainActivity.this,TextReportingActivity.class);
+                startActivity(reportCases);*/
             }
         });
 
@@ -39,8 +78,8 @@ public class MainActivity extends AppCompatActivity
         cardViewCourtCases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent courCases = new Intent(MainActivity.this,CourtCasesActivity.class);
-                startActivity(courCases);
+                Intent courtCases = new Intent(MainActivity.this,CourtCasesFragment.class);
+                startActivity(courtCases);
             }
         });
 
@@ -64,8 +103,6 @@ public class MainActivity extends AppCompatActivity
 
             }
         });
-
-
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -132,8 +169,17 @@ public class MainActivity extends AppCompatActivity
             Intent gotoIggOffices = new Intent(this,IggOfficesActivity.class);
             startActivity(gotoIggOffices);
         } else if (id == R.id.nav_gallery) {
+            Intent gotoCivil = new Intent(MainActivity.this, CivilCaseFragment.class);
 
-        } else if (id == R.id.nav_slideshow) {
+            Log.d(LOG_TAG,"This should go to Civil Case");
+            startActivity(gotoCivil);
+
+
+        }
+        else if (id == R.id.nav_slideshow) {
+           AdminLogInActivity a = new AdminLogInActivity();
+            Intent gotoCases = new Intent(this,CasesActivity.class);
+            startActivity(gotoCases);
 
         } else if (id == R.id.nav_manage) {
 
@@ -147,4 +193,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }

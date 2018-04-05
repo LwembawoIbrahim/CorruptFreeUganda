@@ -13,7 +13,7 @@ public class CorruptionDatabaseHelper extends SQLiteOpenHelper {
 
 
     //This is the initial database version
-    public static  final int DATABASE_VERSION = 4;
+    public static  final int DATABASE_VERSION = 6;
 
     //This is the database name
     public static final String DATABASE_NAME =" Corruption.db ";
@@ -48,6 +48,21 @@ private static final String SQL_DELETE_TABLE_CORRUPTION_DATA =
             CorruptionDataEntry.TABLE_IGG_OFFICES;
 
 
+    //These are the columns with their data types for civil cases_card
+public  static final String SQL_CREATE_TABLE_CIVIL_CASES = " CREATE TABLE " +
+            CorruptionDataEntry.TABLE_CIVIL_CASES +"("+CorruptionDataEntry._ID +
+            " INTEGER PRIMARY KEY, "+
+            CorruptionDataEntry.COLUMN_CIVIL_USER_NAME +" TEXT,"+
+            CorruptionDataEntry.COLUMN_CIVIL_PHONE_NUMBER + " TEXT,"+
+            CorruptionDataEntry.COLUMN_CIVIL_REPORT_TITLE + " TEXT,"+
+            CorruptionDataEntry.COLUMN_CIVIL_REPORT_DESCRIPTION + " TEXT,"+
+            CorruptionDataEntry.COLUMN_CIVIL_IMAGE_UPLOAD + " BLOB,"+
+            CorruptionDataEntry.COLUMN_CIVIL_VIDEO_UPLOAD + " BLOB," +
+            CorruptionDataEntry.COLUMN_CIVIL_AUDIO_UPLOAD + " BLOB )";
+
+public  static final String SQL_DELETE_TABLE_CIVIL_CASES = " DROP TABLE IF EXISTS " +
+        CorruptionDataEntry.TABLE_CIVIL_CASES;
+
 
 
 
@@ -56,6 +71,7 @@ private static final String SQL_DELETE_TABLE_CORRUPTION_DATA =
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(SQL_CREATE_TABLE_CORRUPTION_DATA);
         db.execSQL(SQL_CREATE_TABLE_IGG_OFFICES);
+        db.execSQL(SQL_CREATE_TABLE_CIVIL_CASES);
 
 
     }
@@ -65,6 +81,7 @@ private static final String SQL_DELETE_TABLE_CORRUPTION_DATA =
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL(SQL_DELETE_TABLE_CORRUPTION_DATA);
         db.execSQL(SQL_DELETE_TABLE_IGG_OFFICES);
+        db.execSQL(SQL_DELETE_TABLE_CIVIL_CASES);
         onCreate(db);
 
 

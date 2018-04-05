@@ -1,6 +1,5 @@
-package com.ibralwembawogmail.corruptfreeuganda.FragmentClasses;
+package com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.criminal_cases;
 
-import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -16,10 +15,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ibralwembawogmail.corruptfreeuganda.IggOfficesActivity;
+import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.criminal_cases.AppealedCasesFragment;
+import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.criminal_cases.ConcludedCasesFragment;
+import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.criminal_cases.OnGoingCasesFragment;
 import com.ibralwembawogmail.corruptfreeuganda.R;
 
-public class CourtCasesActivity extends AppCompatActivity {
+public class CourtCasesFragment extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -147,12 +148,12 @@ public class CourtCasesActivity extends AppCompatActivity {
             //PlaceholderFragment.newInstance(position + 1);
            switch (position){
                case 0:
-                   return new OnGoingCasesActivity();
+                   return new OnGoingCasesFragment();
                case 1:
-                   return new ConcludedCasesActivity();
+                   return new ConcludedCasesFragment();
 
                case 2:
-                   return new AppealedCasesActivity();
+                   return new AppealedCasesFragment();
            }
            return null;
 

@@ -1,9 +1,10 @@
-package com.ibralwembawogmail.corruptfreeuganda.FragmentClasses;
+package com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.criminal_cases;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,12 +18,12 @@ import com.ibralwembawogmail.corruptfreeuganda.R;
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionContract.CorruptionDataEntry;
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionDatabaseHelper;
 
-public class OnGoingCasesActivity extends Fragment{
+public class OnGoingCasesFragment extends Fragment{
 
     RecyclerView  OnGoingCriminalCasesRecyclerView;
     OnGoingCriminalCasesAdapter criminalCasesAdapter;
    // List<OnGoingCriminalCases> criminalCasesList = new ArrayList<>();
-    public OnGoingCasesActivity(){
+    public OnGoingCasesFragment(){
 
     }
 
@@ -43,7 +44,6 @@ public class OnGoingCasesActivity extends Fragment{
             CorruptionDataEntry.COLUMN_IMAGE_UPLOAD,
             CorruptionDataEntry.COLUMN_VIDEO_UPLOAD,
             CorruptionDataEntry.COLUMN_AUDIO_UPLOAD
-
     };
 
 
@@ -51,7 +51,7 @@ public class OnGoingCasesActivity extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState){
         final View view = inflater.inflate(R.layout.activity_on_going_cases,container,false);
         CriminalCaseDataRetrieval();
-  OnGoingCriminalCasesRecyclerView = (RecyclerView)view.findViewById(R.id.OnGoingCriminalCasesRecyclerView);
+  OnGoingCriminalCasesRecyclerView = view.findViewById(R.id.OnGoingCriminalCasesRecyclerView);
  OnGoingCriminalCasesRecyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
   criminalCasesAdapter = new OnGoingCriminalCasesAdapter(CriminalCaseDataRetrieval());
         OnGoingCriminalCasesRecyclerView.setAdapter(criminalCasesAdapter);

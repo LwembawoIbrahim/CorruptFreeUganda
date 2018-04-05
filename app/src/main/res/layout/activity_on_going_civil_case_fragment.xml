@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.IggOfficesActivity"
-    tools:showIn="@layout/activity_igg_offices">
+    android:orientation="vertical"
+    tools:context=".FragmentClasses.civil_cases.OnGoingCivilCaseFragment">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/igg_offices_recyclerView"
+        android:id="@+id/OnGoingCivilCasesRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

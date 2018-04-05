@@ -1,4 +1,4 @@
-package com.ibralwembawogmail.corruptfreeuganda.FragmentClasses;
+package com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.criminal_cases;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 
 import com.ibralwembawogmail.corruptfreeuganda.R;
 
-public class ConcludedCasesActivity extends Fragment {
-    public ConcludedCasesActivity(){
+public class ConcludedCasesFragment extends Fragment {
+    public ConcludedCasesFragment(){
 
     }
 

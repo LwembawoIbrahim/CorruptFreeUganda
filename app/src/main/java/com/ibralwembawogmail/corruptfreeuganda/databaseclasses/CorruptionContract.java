@@ -46,6 +46,25 @@ public class CorruptionContract  {
        public static final String COLUMN_OFFICE_NUMBER="TelephoneNumber";
        public static final String COLUMN_OFFICE_EMAIL="OfficeEmail";
 
+    // Table for civil Cases
+       public static final String TABLE_CIVIL_CASES ="civilCases";
+
+       //Columns for civil Cases
+
+       public static  final String COLUMN_CIVIL_USER_NAME = "CivilUserName";
+       public static  final String COLUMN_CIVIL_PHONE_NUMBER="CivilPhoneNumber";
+       // public static  final String COLUMN_EMAIL = "Email";
+       // public  static final String COLUMN_PASSWORD = "Password";
+       public static final String COLUMN_CIVIL_REPORT_TITLE = "CivilReport_title";
+       public static final String COLUMN_CIVIL_REPORT_DESCRIPTION = "CivilReportDescription";
+       public static final String COLUMN_CIVIL_IMAGE_UPLOAD ="CivilImage_uploads";
+       public  static final String COLUMN_CIVIL_VIDEO_UPLOAD ="CivilVideo_upload";
+       public static final String COLUMN_CIVIL_AUDIO_UPLOAD = "CivilAudio_upload";
+
+
+
+
+
    }
 
 
