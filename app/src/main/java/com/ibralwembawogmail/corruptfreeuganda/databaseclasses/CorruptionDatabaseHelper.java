@@ -13,7 +13,7 @@ public class CorruptionDatabaseHelper extends SQLiteOpenHelper {
 
 
     //This is the initial database version
-    public static  final int DATABASE_VERSION = 6;
+    public static  final int DATABASE_VERSION = 8;
 
     //This is the database name
     public static final String DATABASE_NAME =" Corruption.db ";
@@ -42,7 +42,8 @@ private static final String SQL_DELETE_TABLE_CORRUPTION_DATA =
             CorruptionDataEntry.COLUMN_OFFICE_ADDRESS+ " TEXT, "+
             CorruptionDataEntry.COLUMN_OFFICE_BOX_NUMBER + " TEXT,"+
             CorruptionDataEntry.COLUMN_OFFICE_NUMBER + " TEXT, "+
-            CorruptionDataEntry.COLUMN_OFFICE_EMAIL + " TEXT )";
+            CorruptionDataEntry.COLUMN_OFFICE_EMAIL + " TEXT ," +
+            CorruptionDataEntry.COLUMN_OFFICE_FAX + " TEXT )";
 
     public static final String SQL_DELETE_TABLE_IGG_OFFICES = " DROP TABLE IF EXISTS " +
             CorruptionDataEntry.TABLE_IGG_OFFICES;

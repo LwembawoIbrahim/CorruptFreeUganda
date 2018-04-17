@@ -10,11 +10,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.ibralwembawogmail.corruptfreeuganda.DetailedActivity;
 import com.ibralwembawogmail.corruptfreeuganda.R;
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionContract;
 
 public class CivilCaseAdapter extends RecyclerView.Adapter<CivilCaseAdapter.ViewHolder> {
     Cursor civilCusor;
+    String civilTitle;
+    String civilDescription;
 
     public CivilCaseAdapter(Cursor cursor){
         civilCusor=cursor;
@@ -50,6 +53,13 @@ public class CivilCaseAdapter extends RecyclerView.Adapter<CivilCaseAdapter.View
             tv_civilDetails.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    Intent goToDetails = new Intent(cardView.getContext(), DetailedActivity.class);
+                   String civilTitle = tv_civilDetails.getText().toString();
+                   String civilDescription = tv_civilDetails.getText().toString();
+
+                   goToDetails.putExtra("civilTitle",tv_civil_Title.getText());
+                  goToDetails.putExtra("civilDescription",tv_civil_description.getText());
+                  cardView.getContext().startActivity(goToDetails);
 
                 }
             });

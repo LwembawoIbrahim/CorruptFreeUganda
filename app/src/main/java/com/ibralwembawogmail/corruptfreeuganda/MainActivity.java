@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
-                AlertDialog.Builder alertBuilder = new AlertDialog.Builder(MainActivity.this);
+               /* AlertDialog.Builder alertBuilder = new AlertDialog.Builder(MainActivity.this);
                 View alertView = getLayoutInflater().inflate(R.layout.dialog_select_case_type,null);
                 criminalCases =(Button)alertView.findViewById(R.id.crimeCases);
 
@@ -67,10 +67,10 @@ public class MainActivity extends AppCompatActivity
                 });
                 alertBuilder.setView(alertView);
                 AlertDialog dialog = alertBuilder.create();
-                dialog.show();
+                dialog.show();*/
 
-                /*Intent reportCases = new Intent(MainActivity.this,TextReportingActivity.class);
-                startActivity(reportCases);*/
+                Intent reportCases = new Intent(MainActivity.this,TextReportingActivity.class);
+                startActivity(reportCases);
             }
         });
 
@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
             return true;
         }
 

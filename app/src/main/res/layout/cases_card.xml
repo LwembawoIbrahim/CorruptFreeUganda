@@ -62,30 +62,43 @@
 
             <TextView
                 android:id="@+id/txtEditCase"
-                android:layout_width="0dp"
+                android:layout_width="57dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
                 android:layout_marginLeft="5sp"
                 android:layout_marginTop="15sp"
                 android:layout_weight="1"
-                android:text="Edit"
-                android:textSize="15sp"
-                android:padding="5dp"
                 android:focusable="false"
-                android:layout_marginBottom="5sp"
-                 />
+                android:padding="5dp"
+                android:text="Edit"
+                android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/txtDeleteCase"
-                android:layout_width="0dp"
+                android:id="@+id/txtMoveCaseTo"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100sp"
                 android:layout_marginTop="15sp"
-                android:layout_weight="1"
+
                 android:padding="5dp"
                 android:layout_marginBottom="5sp"
                 android:text="Delete"
                 android:textSize="15sp"
                  />
+            <TextView
+                android:id="@+id/txtDeleteCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="15sp"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:focusable="false"
+                android:layout_marginBottom="5sp"
+                android:text="Move"
+                android:layout_marginRight="2dp"
+                android:textSize="15sp"
+                />
 
         </LinearLayout>
         </LinearLayout>

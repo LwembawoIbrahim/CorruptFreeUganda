@@ -45,6 +45,7 @@ public class CorruptionContract  {
        public static final String COLUMN_OFFICE_BOX_NUMBER="BoxNumber";
        public static final String COLUMN_OFFICE_NUMBER="TelephoneNumber";
        public static final String COLUMN_OFFICE_EMAIL="OfficeEmail";
+       public  static final String COLUMN_OFFICE_FAX = "OfficeFax";
 
     // Table for civil Cases
        public static final String TABLE_CIVIL_CASES ="civilCases";

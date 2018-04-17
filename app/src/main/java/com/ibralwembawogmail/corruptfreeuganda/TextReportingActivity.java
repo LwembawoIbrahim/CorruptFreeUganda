@@ -13,6 +13,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionDatabaseHelper;
@@ -26,10 +27,13 @@ public class TextReportingActivity extends AppCompatActivity {
     //String Password;
     String ReportTitle;
     String ReportDescription;
+    ImageView previewImage;
     String UploadImage;
     String UploadVideo;
     String UploadAudio;
     Context mContext;
+    private static int RESULT_LOAD_IMAGE = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +53,12 @@ public class TextReportingActivity extends AppCompatActivity {
              AlertDialog dialog = imageBuilder.create();
              dialog.show();*/
                 //Using an image intent to put images from gallery
+                previewImage = (ImageView)findViewById(R.id.preview_image);
                 Intent imageChooser = new Intent(Intent.ACTION_PICK,
                         MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+               // previewImage
                 startActivity(imageChooser);
+
 
 
 
@@ -73,6 +80,10 @@ public class TextReportingActivity extends AppCompatActivity {
 
                // previewImage.setImageURI(imageChooser.getData());
 
+                /*Intent loadIntent = new Intent(Intent.ACTION_PICK,
+                        MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(loadIntent,RESULT_LOAD_IMAGE);*/
+
 
 
 
@@ -82,6 +93,9 @@ public class TextReportingActivity extends AppCompatActivity {
 
 
         });
+
+
+
 
         EditText uploadVideo = ((EditText) findViewById(R.id.ed_report_upload_video));
         uploadVideo.setOnClickListener(new View.OnClickListener() {

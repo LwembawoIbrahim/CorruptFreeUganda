@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import com.ibralwembawogmail.corruptfreeuganda.FetchDataFromServer;
 import com.ibralwembawogmail.corruptfreeuganda.R;
 
 public class CivilCaseFragment extends AppCompatActivity {
@@ -89,6 +90,8 @@ public class CivilCaseFragment extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            FetchDataFromServer fg = new FetchDataFromServer();
+            fg.execute();
             return true;
         }
 

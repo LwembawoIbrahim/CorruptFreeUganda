@@ -10,6 +10,9 @@ public class GovernmentServicesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_government_services);
+        FetchDataFromServer fetch = new FetchDataFromServer();
+        fetch.execute();
     }
     Intent intent = getIntent();
+
 }

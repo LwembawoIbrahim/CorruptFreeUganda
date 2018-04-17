@@ -46,9 +46,12 @@ public class OnGoingCriminalCasesAdapter extends RecyclerView.Adapter<OnGoingCri
             super(cardView);
 
             //These textViews references those on the card of OnGoingCriminalCourtCases
+
             tvOnGoingCaseCourtTitle = ((TextView) cardView.findViewById(R.id.txtOnGoingCriminalCaseTitle));
-            //tvOnGoingCourtCaseNo =((TextView)cardView.findViewById(R.id.txtCaseCourtNo));
             tvGoingCriminalCaseDescription = ((TextView) cardView.findViewById(R.id.txtOnGoingCriminalCasesDescription));
+
+            //tvOnGoingCourtCaseNo =((TextView)cardView.findViewById(R.id.txtCaseCourtNo));
+
             imgShare = ((ImageView)cardView.findViewById(R.id.imageShare));
             imgShare.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -69,12 +72,13 @@ public class OnGoingCriminalCasesAdapter extends RecyclerView.Adapter<OnGoingCri
                 @Override
                 public void onClick(View view) {
 
-                    String titleDetails = tvDetails.getText().toString();
-                    String Description = tvDetails.getText().toString();
                     Intent details = new Intent(cardView.getContext(), DetailedActivity.class);
+                    String titleDetails = tvDetails.
+                            getText().toString();
+                    String Description = tvDetails.getText().toString();
 
-                    details.putExtra("Extra Title", titleDetails);
-                    details.putExtra(extraDescription, Description);
+                    details.putExtra("Extra_title", tvOnGoingCaseCourtTitle.getText());
+                    details.putExtra("Extra_details", tvGoingCriminalCaseDescription.getText());
                     cardView.getContext().startActivity(details);
 
                 }

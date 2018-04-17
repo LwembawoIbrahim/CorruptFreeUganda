@@ -14,7 +14,8 @@ import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionContrac
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionDatabaseHelper;
 
 public class AddOfficesActivity extends AppCompatActivity {
-    String officeName,OfficeAddress,officeBoxNumber,OfficeTelephoneNumber,OfficeEmailAddress;
+    String officeName,OfficeAddress,officeBoxNumber,OfficeTelephoneNumber,OfficeEmailAddress,
+    officeFaxNumber;
     Button submitOfficeDetails;
 
     @Override
@@ -30,11 +31,13 @@ public class AddOfficesActivity extends AppCompatActivity {
                 officeBoxNumber=((EditText)findViewById(R.id.ed_box_number)).getText().toString();
                 OfficeTelephoneNumber =((EditText)findViewById(R.id.ed_telephone_number)).getText().toString();
                 OfficeEmailAddress =((EditText)findViewById(R.id.ed_office_email)).getText().toString();
+                officeFaxNumber   =((EditText)findViewById(R.id.ed_office_fax_number)).getText().toString();
                 if(!officeName.equals("")
                         &&!OfficeAddress.equals("")
                         &&!officeBoxNumber.equals("")
                         &&!OfficeTelephoneNumber.equals("")
-                        &&!OfficeEmailAddress.equals("")){
+                        &&!OfficeEmailAddress.equals("")
+                        &&!officeFaxNumber.equals("")){
 
                     //Access the tha database
                     CorruptionDatabaseHelper iggOffice = new CorruptionDatabaseHelper(AddOfficesActivity.this);

@@ -66,5 +66,6 @@
     <string name="hello_blank_fragment">Hello Lwembawo fragment</string>
     <string name="title_activity_civil_case_fragment">CivilCaseFragment</string>
     <string name="cases">Cases</string>
+    <string name="fax_number">Fax Number</string>
 
 </resources>

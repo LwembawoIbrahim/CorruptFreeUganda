@@ -27,7 +27,9 @@ public class IggOfficesActivity extends AppCompatActivity {
             CorruptionDataEntry.COLUMN_OFFICE_ADDRESS,
             CorruptionDataEntry.COLUMN_OFFICE_BOX_NUMBER,
             CorruptionDataEntry.COLUMN_OFFICE_NUMBER,
-            CorruptionDataEntry.COLUMN_OFFICE_EMAIL
+            CorruptionDataEntry.COLUMN_OFFICE_EMAIL,
+            CorruptionDataEntry.COLUMN_OFFICE_FAX
+
 
     };
 
@@ -78,6 +80,8 @@ public class IggOfficesActivity extends AppCompatActivity {
         return null;
 
     }
+
+
 
 
 

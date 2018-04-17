@@ -1,10 +1,13 @@
 package com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.civil_cases;
 
+import android.app.ProgressDialog;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,10 +15,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.google.gson.reflect.TypeToken;
 import com.ibralwembawogmail.corruptfreeuganda.R;
 import com.ibralwembawogmail.corruptfreeuganda.adapterClasses.CivilCaseAdapter;
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionContract.CorruptionDataEntry;
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionDatabaseHelper;
+import com.koushikdutta.async.future.Future;
+import com.koushikdutta.async.future.FutureCallback;
+import com.koushikdutta.ion.Ion;
+
+import java.util.List;
 
 public class OnGoingCivilCaseFragment extends Fragment {
     RecyclerView civilCaseRecycler;
@@ -44,7 +53,8 @@ public class OnGoingCivilCaseFragment extends Fragment {
         final View view = inflater.inflate(R.layout.activity_on_going_civil_case_fragment, container, false);
         civilCursorDataRetrieval();
         civilCaseRecycler = view.findViewById(R.id.OnGoingCivilCasesRecyclerView);
-        civilCaseRecycler.setLayoutManager( new LinearLayoutManager(this.getContext()));
+        //civilCaseRecycler.setLayoutManager( new LinearLayoutManager(this.getContext()));
+        civilCaseRecycler.setLayoutManager(new GridLayoutManager(this.getContext(),2));
         civilCaseAdapter = new CivilCaseAdapter(civilCursorDataRetrieval());
         civilCaseRecycler.setAdapter(civilCaseAdapter);
         return view;
@@ -67,6 +77,7 @@ public class OnGoingCivilCaseFragment extends Fragment {
 
 
      );
+
      if(civilCursor!=null&& civilCursor.getCount()>0){
          return civilCursor;
      }
@@ -77,5 +88,10 @@ public class OnGoingCivilCaseFragment extends Fragment {
 
     }
 
-}
+
+
+    }
+
+
+
 

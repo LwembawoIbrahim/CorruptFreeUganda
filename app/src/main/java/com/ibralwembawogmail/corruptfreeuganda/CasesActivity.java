@@ -25,6 +25,8 @@ public class CasesActivity extends AppCompatActivity {
         casesRecyclerView.setLayoutManager( new LinearLayoutManager(this));
         casesAdapter = new CasesAdapter(casesCursorDataRetrieval());
         casesRecyclerView.setAdapter(casesAdapter);
+
+
     }
 
 
@@ -39,7 +41,6 @@ public class CasesActivity extends AppCompatActivity {
             CorruptionContract.CorruptionDataEntry.COLUMN_CIVIL_IMAGE_UPLOAD,
             CorruptionContract.CorruptionDataEntry.COLUMN_CIVIL_AUDIO_UPLOAD,
     };
-
 
 
 
@@ -70,6 +71,7 @@ public class CasesActivity extends AppCompatActivity {
         return null;
 
     }
+
 
 }
 

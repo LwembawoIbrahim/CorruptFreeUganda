@@ -49,6 +49,15 @@
         android:layout_marginTop="10dp"
         android:inputType="textEmailAddress"
         />
+    <EditText
+        android:id="@+id/ed_office_fax_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fax_number"
+        android:layout_marginLeft="2sp"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        />
     <Button
         android:id="@+id/submitOfficeDetails"
         android:layout_width="match_parent"

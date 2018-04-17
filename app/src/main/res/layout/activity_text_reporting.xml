@@ -93,6 +93,15 @@
                 android:inputType="textMultiLine"
                 android:maxLines="4"
                 android:textAlignment="center" />
+            <ImageView
+                android:id="@+id/preview_image"
+                android:layout_marginLeft="100dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+
+                android:src="@drawable/user1"/>
+
+
             <EditText
                 android:id="@+id/ed_report_upload_image"
                 android:layout_width="match_parent"

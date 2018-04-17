@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,7 +36,8 @@ public class IggOfficesAdapter extends RecyclerView.Adapter<IggOfficesAdapter.Vi
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         public TextView
-                tvOfficeName, tvOfficeAddress, tvOfficeBoxNumber, tvTelephoneNumber, tvOfficeEmail;
+                tvOfficeName, tvOfficeAddress, tvOfficeBoxNumber, tvTelephoneNumber, tvOfficeEmail,
+        tvFaxNumber,tvDelete;
 
         public ViewHolder(final View cardView) {
             super(cardView);
@@ -44,6 +46,8 @@ public class IggOfficesAdapter extends RecyclerView.Adapter<IggOfficesAdapter.Vi
             tvOfficeBoxNumber = (TextView) cardView.findViewById(R.id.BoxNumber);
             tvTelephoneNumber = (TextView) cardView.findViewById(R.id.OfficeTelephoneNumber);
             tvOfficeEmail = (TextView) cardView.findViewById(R.id.OfficeEmail);
+            tvFaxNumber =(TextView)cardView.findViewById(R.id.OfficeFax);
+            tvDelete = (TextView)cardView.findViewById(R.id.OfficeDelete);
             /*cardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -70,13 +74,29 @@ public class IggOfficesAdapter extends RecyclerView.Adapter<IggOfficesAdapter.Vi
 
                     String id = view.getTag().toString();
                     Log.d("Lwem", "The method worked and has tag: " + id);
+                    CorruptionDatabaseHelper mHelper = new CorruptionDatabaseHelper(cardView.getContext());
+                    SQLiteDatabase db = mHelper.getWritableDatabase();
+                   // db.delete(CorruptionDataEntry.TABLE_IGG_OFFICES,_ID= "?")
 
-                    Toast.makeText(cardView.getContext(), "You hav long Pressed the card", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(cardView.getContext(), "You hav long Pressed the card " + ""+
+                            tvOfficeName.getText().toString(), Toast.LENGTH_SHORT).show();
 
 
-                    return false;
+                    String itemId = cardView.toString();
+                    //String[] whereClauseValue = {itemId};
+                    String whereClause = CorruptionDataEntry._ID + " = ?";
+
+
+                    return  false;
                 }
             });
+
+            /*tvDelete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                }
+            });*/
 
             /*cardView.onKeyLongPress(){
             }*/
@@ -94,11 +114,11 @@ public class IggOfficesAdapter extends RecyclerView.Adapter<IggOfficesAdapter.Vi
     }
 
     @Override
-    public void onBindViewHolder(IggOfficesAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final IggOfficesAdapter.ViewHolder holder, int position) {
 
         officeCursor.moveToPosition(position);
 
-        String offices = officeCursor.getString(officeCursor.
+        final String offices = officeCursor.getString(officeCursor.
                 getColumnIndex(CorruptionDataEntry.COLUMN_OFFICE_NAME));
         String address = officeCursor.getString(officeCursor.
                 getColumnIndex(CorruptionDataEntry.COLUMN_OFFICE_ADDRESS));
@@ -108,13 +128,23 @@ public class IggOfficesAdapter extends RecyclerView.Adapter<IggOfficesAdapter.Vi
                 getColumnIndex(CorruptionDataEntry.COLUMN_OFFICE_NUMBER));
         String email = officeCursor.getString(officeCursor.
                 getColumnIndex(CorruptionDataEntry.COLUMN_OFFICE_EMAIL));
+        String fax = officeCursor.getString(officeCursor.
+                getColumnIndex(CorruptionDataEntry.COLUMN_OFFICE_FAX));
 
         holder.tvOfficeName.setText(offices);
         holder.tvOfficeAddress.setText(address);
         holder.tvOfficeBoxNumber.setText(boxNumber);
         holder.tvTelephoneNumber.setText(telephone);
         holder.tvOfficeEmail.setText(email);
+        holder.tvFaxNumber.setText(fax);
         holder.itemView.setTag("1");
+       /* holder.tvDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                deleteItem("whereClauseValue");
+                //Toast.makeText("U have long clicked"+ offices,Toast.LENGTH_SHORT).show();
+            }
+        });*/
 
 
     }
@@ -130,6 +160,7 @@ public class IggOfficesAdapter extends RecyclerView.Adapter<IggOfficesAdapter.Vi
     }
 
     private void deleteItem(String itemId) {
+
         CorruptionDatabaseHelper mHelper = new CorruptionDatabaseHelper(mContext);
         SQLiteDatabase db = mHelper.getWritableDatabase();
         String[] whereClauseValue = {itemId};

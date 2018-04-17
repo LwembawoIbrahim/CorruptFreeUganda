@@ -14,37 +14,43 @@ import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionDatabas
 
 
 public class DetailedActivity extends AppCompatActivity {
-    String DetailTitle;
-    String DetailDescription;
-    String tvOnGoingCaseCourtTitle;
-    String tvGoingCriminalCaseDescription;
-   String extraTitle ;
-   String extraDescription ;
+    TextView DetailTitle;
+    TextView DetailDescription;
+   TextView extraTitle ;
+   TextView extraDescription ;
 
-   String[] DetailsProjection ={
+   /*String[] DetailsProjection ={
            CorruptionDataEntry._ID,
            CorruptionDataEntry.COLUMN_USER_NAME,
            CorruptionDataEntry.COLUMN_PHONE_NUMBER,
            CorruptionDataEntry.COLUMN_REPORT_TITLE,
            CorruptionDataEntry.COLUMN_REPORT_DESCRIPTION
-   };
+   };*/
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detailed);
-      DetailTitle = ((TextView)findViewById(R.id.txtDetailedCaseTitle)).toString();
-      DetailDescription = ((TextView)findViewById(R.id.txtDetailsCaseDescription)).toString();
+      DetailTitle = (TextView)findViewById(R.id.txtDetailedCaseTitle);
+      DetailDescription = (TextView)findViewById(R.id.txtDetailsCaseDescription);
         //tvGoingCriminalCaseDescription = ((TextView)findViewById(R.id.txtCaseDescription)).getText().toString();
-        Intent getIntent = getIntent();
-        extraTitle = getIntent.getStringExtra(OnGoingCriminalCasesAdapter.extraTitle);
 
-        extraDescription = getIntent.getStringExtra(OnGoingCriminalCasesAdapter.extraDescription);
+
+       /* DetailTitle = getIntent().getStringExtra("Extra_title");
+        DetailDescription = getIntent().getStringExtra("Extra_details");*/
+       //extraTitle.setText(getIntent().getStringExtra("Extra_title"));
+       DetailTitle.setText(getIntent().getStringExtra("Extra_title"));
+       DetailDescription.setText(getIntent().getStringExtra("Extra_details"));
+
+      // DetailTitle.setText(getIntent().getStringExtra("civilTitle"));
+      // DetailDescription.setText(getIntent().getStringExtra("civilDescription "));
+
+        //extraDescription.setText(getIntent().getStringExtra("Extra_details"));
 
     }
 
-    public  void DisplayDataFromOnGoingCriminalCases(Cursor Details){
+    /*public  void DisplayDataFromOnGoingCriminalCases(Cursor Details){
         Details.moveToFirst();
         ((TextView)findViewById(R.id.txtDetailedCaseTitle))
                 .setText(Details.getString(Details.getColumnIndex(CorruptionDataEntry.COLUMN_REPORT_TITLE)));
@@ -53,7 +59,7 @@ public class DetailedActivity extends AppCompatActivity {
         DisplayDataFromOnGoingCriminalCases(DataRetrieval());
     }
 
-    private Cursor DataRetrieval(){
+    /*private Cursor DataRetrieval(){
         CorruptionDatabaseHelper cDataHelper = new CorruptionDatabaseHelper(this.getApplicationContext());
         SQLiteDatabase detailsDb = cDataHelper.getReadableDatabase();
         String selection  = CorruptionDataEntry._ID + " = ?";
@@ -77,7 +83,7 @@ public class DetailedActivity extends AppCompatActivity {
         }
         return null;
 
-    }
+    }*/
 
 
 
