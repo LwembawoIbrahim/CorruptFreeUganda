@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.civil_cases.CivilCaseFragment;
 import com.ibralwembawogmail.corruptfreeuganda.FragmentClasses.civil_cases.OnGoingCivilCaseFragment;
@@ -35,9 +37,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       // AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+
         setContentView(R.layout.activity_main);
 
-        CardView reportCardView = (CardView)findViewById(R.id.cardViewReportCase);
+        CardView reportCardView = findViewById(R.id.cardViewReportCase);
         reportCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,13 +87,30 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        CardView cardViewGoverntmentServices = (CardView)findViewById(R.id.cardViewGovServices);
+       /* CardView cardViewGoverntmentServices = (CardView)findViewById(R.id.cardViewGovServices);
         cardViewGoverntmentServices.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                 AlertDialog.Builder alertBuilder = new AlertDialog.Builder(MainActivity.this);
+                View alertView = getLayoutInflater().inflate(R.layout.govert_new_ver,null);
+                TextView oktxt =(TextView) alertView.findViewById(R.id.txtOk);
+                      oktxt.setOnClickListener(new View.OnClickListener() {
+                          @Override
+                          public void onClick(View view) {
+                              Intent governmentServices = new Intent(MainActivity.this,MainActivity.class);
 
-                Intent governmentServices = new Intent(MainActivity.this,GovernmentServicesActivity.class);
-                startActivity(governmentServices);
+                              startActivity(governmentServices);
+
+
+                          }
+                      });
+
+                        alertBuilder.setView(alertView);
+                        AlertDialog dialog = alertBuilder.create();
+                        dialog.show();
+
+
+
             }
         });
 
@@ -97,12 +118,25 @@ public class MainActivity extends AppCompatActivity
         cardViewInformation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                AlertDialog.Builder alertDialog = new  AlertDialog.Builder(MainActivity.this);
+                View alertView = getLayoutInflater().inflate(R.layout.info_new_ver,null);
+                TextView okinfotxt =(TextView) alertView.findViewById(R.id.infotxtOk);
+                okinfotxt.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent information = new Intent(MainActivity.this,MainActivity.class);
+                        startActivity(information);
 
-                Intent information = new Intent(MainActivity.this,InformationActivity.class);
-                startActivity(information);
+                    }
+                });
+
+                alertDialog.setView(alertView);
+                AlertDialog dialog = alertDialog.create();
+                dialog.show();
+
 
             }
-        });
+        });*/
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

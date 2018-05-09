@@ -91,8 +91,8 @@
                 android:layout_marginVertical="8sp"
                 android:hint="Report Description"
                 android:inputType="textMultiLine"
-                android:maxLines="4"
-                android:textAlignment="center" />
+                android:lines="8"
+                android:gravity="top" />
             <ImageView
                 android:id="@+id/preview_image"
                 android:layout_marginLeft="100dp"
@@ -139,7 +139,7 @@
                 android:layout_gravity="end|bottom"
                 android:layout_margin="@dimen/fab_margin"
                 app:fabSize="normal"
-                android:onClick="OnSavingCriminalCases"
+                android:onClick="OnSavingCases"
                 android:focusable="false"
                 app:backgroundTint="@android:color/holo_blue_dark"
                 app:srcCompat="@android:drawable/ic_menu_send" />-->
@@ -154,19 +154,19 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Save Criminal Case"
-        android:onClick="OnSavingCriminalCases"
+        android:text="Send Case Report"
+        android:onClick="OnSavingCases"
         android:focusable="false"
         android:textColor="@android:color/white"
         android:background="@color/colorAccent"/>
-    <Button
+   <!-- <Button
         android:id="@+id/btn_saving_civilCases"
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:text="Save Civil Case"
-        android:onClick="OnSavingCivilCases"
+        android:onClick="OnSavingCivilCases">-->
 
 
         android:layout_marginLeft="8dp"

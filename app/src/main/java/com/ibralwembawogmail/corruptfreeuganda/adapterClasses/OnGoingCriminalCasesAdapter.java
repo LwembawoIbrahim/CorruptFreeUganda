@@ -24,14 +24,14 @@ public class OnGoingCriminalCasesAdapter extends RecyclerView.Adapter<OnGoingCri
     //private List<OnGoingCriminalCases> criminalCasesList = new ArrayList<>();
     public static final String extraTitle = "TileExtra";
     public static final String extraDescription = "DescriptionExtra";
-    Cursor crimeCursor;
+    // Cursor crimeCursor;
     String tvOnGoingCaseCourtTitle;
     String tvGoingCriminalCaseDescription;
 
 
     //A constructor for the OnGoingCaasesAdapter
     public OnGoingCriminalCasesAdapter(Cursor cursor) {
-        crimeCursor = cursor;
+        //  crimeCursor = cursor;
         //this.criminalCasesList =casesList;
 
     }
@@ -52,7 +52,7 @@ public class OnGoingCriminalCasesAdapter extends RecyclerView.Adapter<OnGoingCri
 
             //tvOnGoingCourtCaseNo =((TextView)cardView.findViewById(R.id.txtCaseCourtNo));
 
-            imgShare = ((ImageView)cardView.findViewById(R.id.imageShare));
+            imgShare = ((ImageView) cardView.findViewById(R.id.imageShare));
             imgShare.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -105,24 +105,26 @@ public class OnGoingCriminalCasesAdapter extends RecyclerView.Adapter<OnGoingCri
     public void onBindViewHolder(OnGoingCriminalCasesAdapter.MyViewHolder holder, int position) {
 
         //Here i bind the data to the textView on the card
-        crimeCursor.moveToPosition(position);
-        ContentValues contentValues = new ContentValues();
-        String ReportTitle = crimeCursor.getString
-                (crimeCursor.getColumnIndex(CorruptionDataEntry.COLUMN_REPORT_TITLE));
-        String ReportDescription = crimeCursor.getString
-                (crimeCursor.getColumnIndex(CorruptionDataEntry.COLUMN_REPORT_DESCRIPTION));
+        //crimeCursor.moveToPosition(position);
+       // ContentValues contentValues = new ContentValues();
+        //String ReportTitle = crimeCursor.getString
+        //        (crimeCursor.getColumnIndex(CorruptionDataEntry.COLUMN_REPORT_TITLE));
+        //String ReportDescription = crimeCursor.getString
+         //       (crimeCursor.getColumnIndex(CorruptionDataEntry.COLUMN_REPORT_DESCRIPTION));
 
-        holder.tvOnGoingCaseCourtTitle.setText(ReportTitle);
-        holder.tvGoingCriminalCaseDescription.setText(ReportDescription);
+       // holder.tvOnGoingCaseCourtTitle.setText(ReportTitle);
+       // holder.tvGoingCriminalCaseDescription.setText(ReportDescription);
 
 
     }
 
     @Override
     public int getItemCount() {
-        if (crimeCursor != null) {
-            return crimeCursor.getCount();
-        }
+       /*if (crimeCursor != null) {
+           // return crimeCursor.getCount();
+        }*/
         return 0;
+
+
     }
 }

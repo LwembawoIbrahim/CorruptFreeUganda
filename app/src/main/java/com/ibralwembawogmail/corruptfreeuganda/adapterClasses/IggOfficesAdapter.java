@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -91,12 +92,39 @@ public class IggOfficesAdapter extends RecyclerView.Adapter<IggOfficesAdapter.Vi
                 }
             });
 
-            /*tvDelete.setOnClickListener(new View.OnClickListener() {
+            tvOfficeEmail.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View view) {
+                    String TO = tvOfficeEmail.getText().toString();
+                    String[]receipt = {TO};
+                    String officeName = tvOfficeName.getText().toString();
+
+
+                    Intent emailIntent = new Intent(Intent.ACTION_SEND);
+
+                    emailIntent.setData(Uri.parse("mailto: "+ TO));
+
+                    //emailIntent.setType("text/plain");
+                    emailIntent.putExtra(Intent.EXTRA_EMAIL,receipt);
+                    emailIntent.setType("Message/rfc822");
+
+                    emailIntent.putExtra(Intent.EXTRA_SUBJECT,"Hello " +officeName);
+                    //emailIntent.putExtra(Intent.EXTRA_TEXT,orderDetails.getText().toString());
+                    cardView.getContext().startActivity(Intent.createChooser(emailIntent,"Complete Action Using "));
+
+
+
+                }
+            });
+
+            tvDelete.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
+
                 }
-            });*/
+            });
 
             /*cardView.onKeyLongPress(){
             }*/
@@ -162,12 +190,20 @@ public class IggOfficesAdapter extends RecyclerView.Adapter<IggOfficesAdapter.Vi
     private void deleteItem(String itemId) {
 
         CorruptionDatabaseHelper mHelper = new CorruptionDatabaseHelper(mContext);
-        SQLiteDatabase db = mHelper.getWritableDatabase();
+        //SQLiteDatabase db = mHelper.getWritableDatabase();
+        SQLiteDatabase db = mHelper.getReadableDatabase();
         String[] whereClauseValue = {itemId};
         String whereClause = CorruptionDataEntry._ID + " = ?";
 
         int result = db.delete(CorruptionDataEntry.TABLE_IGG_OFFICES, whereClause, whereClauseValue);
     }
+
+    /*private void displaySelectedItem(){
+        CorruptionDatabaseHelper helper =  new CorruptionDatabaseHelper(mContext);
+        SQLiteDatabase rdb = helper.getReadableDatabase();
+        rdb.execSQL("Select * from "+CorruptionDataEntry.TABLE_IGG_OFFICES +
+                "Where status = "OnGoing||" );
+    }*/
 
 
 }

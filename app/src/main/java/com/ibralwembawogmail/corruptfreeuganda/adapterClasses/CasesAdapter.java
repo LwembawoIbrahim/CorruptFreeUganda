@@ -25,6 +25,7 @@ import com.ibralwembawogmail.corruptfreeuganda.TextReportingActivity;
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionContract;
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionContract.CorruptionDataEntry;
 import com.ibralwembawogmail.corruptfreeuganda.databaseclasses.CorruptionDatabaseHelper;
+import com.koushikdutta.ion.Ion;
 import com.squareup.picasso.Picasso;
 
 public class CasesAdapter extends RecyclerView.Adapter<CasesAdapter.CaseView> {
@@ -62,6 +63,9 @@ public class CasesAdapter extends RecyclerView.Adapter<CasesAdapter.CaseView> {
             tvMove.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    CorruptionDatabaseHelper helper = new CorruptionDatabaseHelper(cardView.getContext());
+                    SQLiteDatabase db = helper.getReadableDatabase();
+
 
                 }
             });
@@ -90,12 +94,12 @@ public class CasesAdapter extends RecyclerView.Adapter<CasesAdapter.CaseView> {
 
 
         final String caseTitle = casesCursor.getString(casesCursor.getColumnIndex
-              (CorruptionContract.CorruptionDataEntry.COLUMN_CIVIL_REPORT_TITLE));
+              (CorruptionContract.CorruptionDataEntry.COLUMN_REPORT_TITLE));
       String image_case = casesCursor.getString(casesCursor.getColumnIndex
-              (CorruptionContract.CorruptionDataEntry.COLUMN_CIVIL_IMAGE_UPLOAD));
+              (CorruptionContract.CorruptionDataEntry.COLUMN_IMAGE_UPLOAD));
 
       final String caseDescription = casesCursor.getString(casesCursor.getColumnIndex
-              (CorruptionContract.CorruptionDataEntry.COLUMN_CIVIL_REPORT_DESCRIPTION));
+              (CorruptionContract.CorruptionDataEntry.COLUMN_REPORT_DESCRIPTION));
 
       holder.tvCaseTitle.setText(caseTitle);
       //holder.cases_images.setImageURI();
@@ -111,6 +115,13 @@ public class CasesAdapter extends RecyclerView.Adapter<CasesAdapter.CaseView> {
 
                          }
        });
+
+        Ion.with(holder.cases_images).placeholder(R.drawable.igg_icon)
+                .error(R.drawable.court_case)
+                .load(
+                        "http://www.uscourts.gov/about-federal-courts/types-cases/civil-cases"
+                    );
+
     }
 
     @Override

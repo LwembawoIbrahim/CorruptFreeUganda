@@ -5,7 +5,7 @@
     <!-- <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" /> -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -63,8 +63,10 @@
             android:name=".FragmentClasses.civil_cases.CivilCaseFragment"
             android:label="@string/court_case"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CasesActivity"
-            android:label="@string/cases"></activity>
+        <activity
+            android:name=".CasesActivity"
+            android:label="@string/cases" />
+
     </application>
 
 </manifest>

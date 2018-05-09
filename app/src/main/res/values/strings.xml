@@ -67,5 +67,6 @@
     <string name="title_activity_civil_case_fragment">CivilCaseFragment</string>
     <string name="cases">Cases</string>
     <string name="fax_number">Fax Number</string>
+    <string name="title_activity_google_map">GoogleMapActivity</string>
 
 </resources>

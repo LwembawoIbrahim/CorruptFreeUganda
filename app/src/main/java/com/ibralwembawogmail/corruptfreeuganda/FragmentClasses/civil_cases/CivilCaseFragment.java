@@ -91,7 +91,7 @@ public class CivilCaseFragment extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             FetchDataFromServer fg = new FetchDataFromServer();
-            fg.execute();
+            //fg.execute();
             return true;
         }
 

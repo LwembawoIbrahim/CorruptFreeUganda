@@ -57,6 +57,7 @@ public class TextReportingActivity extends AppCompatActivity {
                 Intent imageChooser = new Intent(Intent.ACTION_PICK,
                         MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                // previewImage
+                //previewImage.setImageURI(imageChooser.getData());
                 startActivity(imageChooser);
 
 
@@ -131,7 +132,7 @@ public class TextReportingActivity extends AppCompatActivity {
             }
         });
     }
-    public  void OnSavingCriminalCases(View view){
+    public  void OnSavingCases(View view){
       //  FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.send_fab);
         Button crimeBtn = (Button)findViewById(R.id.btn_saving_criminalCases);
         crimeBtn.setOnClickListener(new View.OnClickListener() {
@@ -202,9 +203,9 @@ public class TextReportingActivity extends AppCompatActivity {
         });
 
     }
-    public void OnSavingCivilCases(View view){
-        Button civil =findViewById(R.id.btn_saving_civilCases);
-        civil.setOnClickListener(new View.OnClickListener() {
+  //  public void OnSavingCivilCases(View view){
+      //  Button civil =findViewById(R.id.btn_saving_civilCases);
+        /*civil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 UserName = ((EditText)findViewById(R.id.ed_user_name)).getText().toString();
@@ -219,7 +220,7 @@ public class TextReportingActivity extends AppCompatActivity {
 
 
 
-                        if(!UserName.equals("")
+                        /*if(!UserName.equals("")
                                 &&!PhoneNumber.equals("")
                                 // &&!Email.equals("")
                                 //&&!Password.equals("")
@@ -257,10 +258,12 @@ public class TextReportingActivity extends AppCompatActivity {
                         else {
                             Toast.makeText(getApplicationContext(),"Fill all the first four inputs ",Toast.LENGTH_SHORT).show();
                         }
-                    }
-                });
+                    }*/
+                //});
 
-    }
+   // }
+
+
 
     Intent intent = getIntent();
 }

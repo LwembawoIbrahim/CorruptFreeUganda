@@ -14,6 +14,7 @@ public class CorruptionDatabaseHelper extends SQLiteOpenHelper {
 
     //This is the initial database version
     public static  final int DATABASE_VERSION = 8;
+   // public static final int DATABASE_DOWN_GRADE=1;
 
     //This is the database name
     public static final String DATABASE_NAME =" Corruption.db ";
@@ -93,4 +94,11 @@ public  static final String SQL_DELETE_TABLE_CIVIL_CASES = " DROP TABLE IF EXIST
         //super(context,IGG_OFFICE_DATABASE,null,DATABASE_VERSION);
 
     }
+
+   /* @Override
+    public void onDowngrade(SQLiteDatabase db, int DATABASE_VERSION, int DATABASE_DOWN_GRADE) {
+        //db.execSQL(DATABASE_VERSION,DATABASE_DOWN_GRADE,DATABASE_VERSION);
+        super.onDowngrade(db, DATABASE_VERSION, DATABASE_DOWN_GRADE);
+        onCreate(db);
+    }*/
 }

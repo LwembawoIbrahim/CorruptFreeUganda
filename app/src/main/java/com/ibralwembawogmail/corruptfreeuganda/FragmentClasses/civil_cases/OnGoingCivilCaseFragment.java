@@ -54,7 +54,7 @@ public class OnGoingCivilCaseFragment extends Fragment {
         civilCursorDataRetrieval();
         civilCaseRecycler = view.findViewById(R.id.OnGoingCivilCasesRecyclerView);
         //civilCaseRecycler.setLayoutManager( new LinearLayoutManager(this.getContext()));
-        civilCaseRecycler.setLayoutManager(new GridLayoutManager(this.getContext(),2));
+        civilCaseRecycler.setLayoutManager(new LinearLayoutManager(this.getContext()));
         civilCaseAdapter = new CivilCaseAdapter(civilCursorDataRetrieval());
         civilCaseRecycler.setAdapter(civilCaseAdapter);
         return view;
@@ -91,6 +91,7 @@ public class OnGoingCivilCaseFragment extends Fragment {
 
 
     }
+
 
 
 

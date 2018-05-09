@@ -43,10 +43,6 @@ public class DetailedActivity extends AppCompatActivity {
        DetailTitle.setText(getIntent().getStringExtra("Extra_title"));
        DetailDescription.setText(getIntent().getStringExtra("Extra_details"));
 
-      // DetailTitle.setText(getIntent().getStringExtra("civilTitle"));
-      // DetailDescription.setText(getIntent().getStringExtra("civilDescription "));
-
-        //extraDescription.setText(getIntent().getStringExtra("Extra_details"));
 
     }
 
